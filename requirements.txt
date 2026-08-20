@@ -1,0 +1,14 @@
+# Jan Setu - Python Backend Requirements
+# The Python backend uses ONLY Python standard library modules:
+#   - http.server, socketserver (built-in HTTP server)
+#   - sqlite3 (built-in database)
+#   - json, re, os, hashlib, uuid, random, datetime, urllib (all stdlib)
+#
+# No third-party pip packages are required.
+# Requires: Python 3.10+ (for modern type hint syntax used in the codebase)
+#
+# Optional: If you want to use a virtual environment (recommended):
+#   python -m venv venv
+#   Windows:  venv\Scripts\activate
+#   Linux/Mac: source venv/bin/activate
+#   pip install -r requirements.txt  (nothing to install, but good practice)

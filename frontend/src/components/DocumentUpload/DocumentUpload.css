@@ -1,0 +1,102 @@
+.document-upload-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.upload-dropzone {
+  border: 2px dashed var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--bg-main);
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.upload-dropzone:hover, .upload-dropzone.dragover {
+  border-color: var(--accent);
+  background-color: var(--bg-card-hover);
+}
+
+.dropzone-icon {
+  font-size: 2.25rem;
+  color: var(--accent);
+}
+
+.dropzone-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.dropzone-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.upload-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.camera-preview-box {
+  background-color: #000;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.ocr-result-card {
+  background-color: var(--bg-main);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ocr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ocr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.ocr-item {
+  background-color: var(--bg-card);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+}
+
+.ocr-item .label {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.ocr-item .val {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-top: 2px;
+}

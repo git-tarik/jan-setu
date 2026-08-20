@@ -1,0 +1,25 @@
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-select-input {
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.85rem;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.language-select-input:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.language-select-input:focus {
+  border-color: var(--border-focus);
+}
